@@ -1,15 +1,10 @@
 <!--
 Sync Impact Report:
-Version change: [CONSTITUTION_VERSION_OLD] -> 1.0.0
+Version change: 1.0.0 -> 1.0.1
 List of modified principles:
-  - Added: I. Write tests first (TDD approach)
-  - Added: II. Use Python 3.12+ with type hints everywhere
-  - Added: III. Keep code clean and easy to read
-  - Added: IV. Document important decisions with ADRs
-  - Added: V. Follow essential OOP principles: SOLID, DRY, KISS
+  - Quality Requirements section updated with specific code quality standards.
 Added sections:
-  - Technical Stack
-  - Quality Requirements
+  - None
 Removed sections:
   - None
 Templates requiring updates:
@@ -58,8 +53,13 @@ Object-Oriented Programming (OOP) principles such as SOLID (Single Responsibilit
 - All tests must pass
 - At least 80% code coverage
 - Use dataclasses for data structures
+- All functions must include type hints on parameters and return types (e.g., `def add(a: float, b: float) -> float:`)
+- All functions must include docstrings explaining what they do (e.g., `"""Add two numbers and return the sum."""`)
+- Follow PEP 8 naming conventions (e.g., `lowercase_with_underscores` for functions)
+- Lines must be under 100 characters
+- No magic numbers; use named constants (e.g., `if x > MAX_POWER_EXPONENT:` instead of `if x > 10:`)
 
 ## Governance
 This Constitution supersedes all other practices. Amendments require documentation, approval, and a migration plan. All Pull Requests (PRs) and code reviews must verify compliance with these principles.
 
-**Version**: 1.0.0 | **Ratified**: 2025-11-23 | **Last Amended**: 2025-11-23
+**Version**: 1.0.1 | **Ratified**: 2025-11-23 | **Last Amended**: 2025-11-23
